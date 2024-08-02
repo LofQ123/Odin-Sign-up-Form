@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <container class="container">
+        <div class="leftPanel">
+            <img class="background" src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="">
+            <div class="titlePanel">
+                <img src="images/odin-lined.png" alt="Odin-logo" class="logo">
+                <h1 class="titleText">ODIN</h1>
+            </div>
+            <p class="photoCredit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div class="rightPanel">
+            <p class="top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+            <section class="formSection">
+                <p>Let's do this!</p>
+                <div class="formContainer">
+                    <ul class="columnLeft">
+                        <li>
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                        </li>
+                    </ul>
+                    <ul class="columnRight">
+                        <li>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </li>
+                        <li>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text" id="phone" name="phone">
+                        </li>
+                        <li>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <button class="btnSubmit"type="submit">Create Account</button>
+            <p class="login">Already have an account? <a>Log in</a></p>
+        </div>
+    </container>
+</body>
+</html>

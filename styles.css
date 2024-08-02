@@ -1,0 +1,194 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.leftPanel {
+    height: 100vh;
+    width: 41vw;
+    max-width: 540px;
+}
+
+.rightPanel {
+    height: 100vh;
+    width: max(100% - 41vw, 100% - 540px);
+    overflow: auto;
+}
+
+.background {
+    height: 100vh;
+    width: 41vw;
+    object-fit: cover;   
+}
+
+.titlePanel {
+    background-color: rgba(0, 0, 0, 60%);
+    position: absolute;
+    width: 41vw;
+    top: 22%;
+    max-width: 540px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.logo {
+    height: 80%;
+}
+
+.titleText {
+    font-family: 'Norse-Bold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 11vh;
+    line-height: 11vh;
+    height:11vh;
+}
+
+.photoCredit {
+    font-weight: 100;
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 5%;
+}
+
+.leftPanel a {
+    text-decoration:underline;
+    color: white;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 2rem
+}
+
+label {
+    display: block;
+}
+
+.formSection {
+    background-color: #ffffff;
+    box-shadow: 3px 4px 20px 1px rgba(80, 92, 51, 0.17);
+    margin-top: 3rem;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    margin-top: 15px;
+    gap: 5vw;
+}
+
+button {
+    margin-left: 40px;
+}
+
+p.top {
+    margin-top: 15vh;
+    margin-bottom: 1.5rem;
+}
+
+.rightPanel p {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: calc(1.5rem + 20%);
+}
+
+.formSection p {
+    padding-top: 1rem;
+}
+
+.formContainer label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #293240;
+}
+
+.formContainer input {
+    border-radius: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.137);
+    width: 19vw;
+    outline: none;
+    padding-left: 10px
+}
+
+input:focus {
+    border: 2px solid rgba(31, 90, 218, 0.74);
+}
+
+input:invalid {
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.btnSubmit {
+    background-color: #596d48;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 3rem;
+    border-radius: 8px;
+    border: 2px solid #465737;
+    margin-top: 2em;
+}
+
+.login {
+    margin-top: 1em;
+    font-weight: lighter;
+}
+
+.login a {
+    color: #596d48
+}
